@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: #efefef;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/circle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.container {
+  padding: 2% 3%;
+  border: 2px solid rgb(77, 17, 241);
+  width: 100%;
+  height: 100%;
+  background: url("images/character.png") no-repeat;
+  background-size: 300px;
+  background-position: bottom;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+    position: relative;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 10px;
+  color: #272727;
+  cursor: pointer;
+}
+
+.navbar a::after {
+  content:'';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:0;
+  height:3px;
+  background: #e6ba38;
+  transition: all .5s;
+}
+.navbar a:hover::after {
+   width: 100%;
+  }
+
+.logo {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #000;
+  cursor:default;
+}
+.hamb {
+  text-decoration: none;
+  font-family: Montserrat;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.main {
+  display: flex;
+}
+
+.main1 {
+  flex: 33%;
+  height: 600px;
+}
+
+.text1 {
+  width: 300px;
+  height: auto;
+  font-size: 18px;
+  color: #222222;
+  font-weight: 500;
+  font-family: "Montserrat";
+  margin: 25% 20%;
+}
+button{
+    font-size: 15px;
+color: #222222;
+font-weight: 800;
+font-family: "Montserrat";
+border: none;
+}
+
+.main2 {
+  flex: 27%;
+}
+
+.main3 {
+  display: flex;
+  align-items: center;
+  flex: 38%;
+}
+
+.text3 {
+  margin-top: 20%;
+  font-size: 90px;
+  line-height: 70px;
+  color: #222222;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .text {
+  font-size: 15px;
+  color: #222222;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social a {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: #222222;
+  margin-right: 0.5rem;
+}
+
+.social a:hover {
+  color: #e6ba38;
+}
+span{
+    color:#efefef;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
